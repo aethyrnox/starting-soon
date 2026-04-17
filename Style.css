@@ -6,7 +6,7 @@
    ============================================================ */
 @font-face {
     font-family: 'CustomFont';
-    src: url('fonts/Blackbones.otf') format('truetype');
+    src: url('fonts/edo.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -103,15 +103,7 @@ html, body {
 /* ============================================================
    LAYER 2 — NEON CABLE CANVAS
    ============================================================ */
-#neonCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-}
+
 
 /* ============================================================
    LAYER 3 — SCANLINES
@@ -183,25 +175,25 @@ html, body {
    ============================ */
 .starting-soon {
     font-family: 'CustomFont', 'Impact', 'Arial Black', sans-serif;
-    font-size: 102px;
+    font-size: 130px;
     color: #ffffff;
     text-align: center;
     white-space: nowrap;
-    letter-spacing: 5px;
+    letter-spacing: 15px;
     line-height: 1.1;
     position: relative;
     z-index: 2;
     user-select: none;
 
     /* RED WINE STROKE — 5px */
-    -webkit-text-stroke: 5px #8B001A;
-    text-stroke: 5px #8B001A;
+    -webkit-text-stroke: 0px #8B001A;
+    text-stroke: 1px #8B001A;
 
     /* Glow layers */
     text-shadow:
-        0 0 18px rgba(139, 0, 26, 0.65),
-        0 0 42px rgba(139, 0, 26, 0.38),
-        0 0 78px rgba(139, 0, 26, 0.20),
+        0 0 12px rgba(139, 0, 26, 0.65),
+        0 0 36px rgba(139, 0, 26, 0.38),
+        0 0 72px rgba(139, 0, 26, 0.20),
         0 3px  8px rgba(0, 0, 0, 0.95);
 
     animation: textPulse 3.2s ease-in-out infinite;
@@ -210,17 +202,17 @@ html, body {
 @keyframes textPulse {
     0%, 100% {
         text-shadow:
-            0 0 18px rgba(139, 0, 26, 0.65),
-            0 0 42px rgba(139, 0, 26, 0.38),
-            0 0 78px rgba(139, 0, 26, 0.20),
+            0 0 12px rgba(139, 0, 26, 0.65),
+            0 0 36px rgba(139, 0, 26, 0.38),
+            0 0 72px rgba(139, 0, 26, 0.20),
             0 3px  8px rgba(0, 0, 0, 0.95);
         opacity: 1;
     }
     50% {
         text-shadow:
-            0 0 28px rgba(200, 0, 30, 0.95),
-            0 0 60px rgba(160, 0, 26, 0.58),
-            0 0 105px rgba(139, 0, 26, 0.32),
+            0 0 24px rgba(200, 0, 30, 0.95),
+            0 0 56px rgba(160, 0, 26, 0.58),
+            0 0 102px rgba(139, 0, 26, 0.32),
             0 3px  8px rgba(0, 0, 0, 0.95);
         opacity: 0.97;
     }
